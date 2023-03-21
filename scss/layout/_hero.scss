@@ -1,0 +1,84 @@
+.hero {
+  // .hero__container
+  &__container {
+    min-width: rem(496);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: rem(20);
+    @media (max-width: $mobile) {
+      min-width: 0;
+      grid-template-columns: 1fr;
+      row-gap: rem(30);
+    }
+  }
+  // .hero__content
+  &__content {
+  }
+  // .hero__title
+  &__title {
+    &:not(:last-child) {
+      margin-bottom: rem(32);
+      @media (max-width: $mobile) {
+        margin-bottom: rem(16);
+      }
+    }
+  }
+  // .hero__text
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: rem(40);
+      @media (max-width: $mobile) {
+        margin-bottom: rem(30);
+      }
+    }
+  }
+  // .hero__social
+  &__social {
+  }
+  // .hero__decor
+  &__decor {
+    justify-self: end;
+    max-width: 336px;
+    width: 100%;
+    @media (min-width: $mobile) {
+      padding-right: rem(15);
+    }
+    @media (max-width: $mobile) {
+      justify-self: center; /*margin: 0 0 0 auto*/
+      padding: 0 rem(20);
+    }
+  }
+  // .hero__image
+  &__image {
+    position: relative;
+    padding-top: 119%; /*400/336*/
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+    }
+    &::before {
+      z-index: -1;
+      background-color: $purpleColor;
+      transform: rotate(-9.55deg);
+    }
+    &::after {
+      background: $purpleColorLt url(../../img/hero/lines.svg) top right / 58%
+        no-repeat;
+    }
+    img {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      max-width: 100%;
+    }
+  }
+}

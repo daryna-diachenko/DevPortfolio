@@ -1,0 +1,107 @@
+.page {
+  // .page__hero
+  &__hero {
+    padding-top: rem(240);
+    padding-bottom: rem(144);
+    @media (max-width: $tablet) {
+      padding-top: rem(160);
+      padding-bottom: rem(60);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(100);
+      padding-bottom: rem(50);
+    }
+  }
+  // .page__services
+  &__services {
+    padding-top: rem(114);
+    padding-bottom: rem(184);
+    @media (max-width: $tablet) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+    }
+  }
+}
+// ===================================
+.title {
+  // .title__label
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: rem(16);
+    font-weight: $medium;
+    font-size: rem(12);
+    letter-spacing: em(7.5, 12);
+    text-transform: uppercase;
+    color: $greyColor;
+    @media (max-width: $mobile) {
+      font-size: rem(10);
+    }
+    &::before {
+      content: "";
+      width: rem(16);
+      height: rem(2);
+      background-color: #d9d9d9;
+    }
+    &:not(:last-child) {
+      margin-bottom: em(9, 12);
+    }
+  }
+  // .title__value
+  &__value {
+    font-family: $fontFamilySecondary;
+    font-weight: $bold;
+    font-size: rem(36);
+    line-height: 1.25;
+    @media (max-width: $mobile) {
+      font-size: rem(28);
+    }
+    span {
+      color: $purpleColor;
+    }
+    // .title__value--big
+    &--big {
+      font-size: rem(44);
+      @media (max-width: $mobile) {
+        font-size: rem(38);
+      }
+    }
+  }
+}
+// ===================================
+// ===================================
+.text {
+  p {
+    &:not(:last-child) {
+      margin-bottom: rem(15);
+    }
+  }
+}
+// ===================================
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: rem(32);
+  row-gap: rem(5);
+  @media (max-width: $mobile) {
+    column-gap: rem(24);
+  }
+
+  // .social__item
+  &__item {
+  }
+  // .social__link
+  &__link {
+    font-size: rem(22);
+    transition: color $transition;
+    &:hover,
+    &:focus {
+      color: $purpleColor;
+    }
+  }
+}

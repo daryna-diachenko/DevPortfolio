@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  // outline: none;
+}
+a:focus,
+a:active {
+  // outline: none;
+}
+html,
+body {
+  height: 100%;
+  min-width: $minWidth + px;
+}
+body {
+  font-family: $fontFamilyPrimary;
+  font-weight: $reg;
+  font-size: $fontSize;
+  line-height: 2.0;
+  color: $mainColor;
+}
+input,
+button,
+textarea {
+  font-family: $fontFamilyPrimary;
+  font-size: inherit;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-style: inherit;
+}

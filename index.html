@@ -1,18 +1,144 @@
-! <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header>
-        <nav></nav>
-    </header>
-    <main></main>
-    <footer></footer>
-    <script src="./js/script.js"></script>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a href="" class="header__logo"
+            ><img src="./img/logo.svg" alt="Logo"
+          /></a>
+          <div class="header__menu menu">
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link">Services</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Portfolios</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Experience</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link">Blog</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header__actions">
+            <a href="" class="header__button">Resume</a>
+            <button type="button" class="header__icon icon-menu">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main data-fp class="page">
+        <!-- Hero -->
+        <section data-fp-section class="page__hero hero">
+          <div class="hero__container">
+            <div class="hero__content">
+              <div class="hero__title title">
+                <h2 class="title__label">MY NAME IS</h2>
+                <h1 class="title__value title__value--big">
+                  Alex <span>Smith.</span>
+                </h1>
+              </div>
+              <div class="hero__text text">
+                <p>
+                  Creative front-end developer with more than +5 years of
+                  experience in enterprise companies and startups. Proficient in
+                  JavaScript, Angular, and React. Passionate about UI/UX
+                </p>
+              </div>
+              <ul class="hero__social social">
+                <li class="social__item">
+                  <a href="" class="social__link _icon-s-instagram"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link _icon-s-github"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link _icon-s-twitter"></a>
+                </li>
+                <li class="social__item">
+                  <a href="" class="social__link _icon-s-linkedin"></a>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__decor">
+              <div class="hero__image">
+                <img
+                  src="./img/hero/01.png"
+                  alt="A man wearing glasses and in a black hoodie"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Services -->
+        <section data-fp-section class="page__services services">
+          <div class="services__container">
+            <div class="services__title title">
+              <h3 class="title__label">SERVICES</h3>
+              <h2 class="title__value title__value">Specialized in</h2>
+            </div>
+            <ul class="services__items">
+              <li class="services__item item-service">
+                <div class="item-service__icon">
+                  <img src="./img/services/crown.svg" alt="Icon" />
+                </div>
+                <h4 class="item-service__title">UI/UX Design</h4>
+                <div class="item-service__text text">
+                  <p>
+                    Turn what you have in mind of a digital product into
+                    reality. For any platform you consider.
+                  </p>
+                </div>
+              </li>
+              <li class="services__item item-service">
+                <div class="item-service__icon">
+                  <img src="./img/services/app.svg" alt="Icon" />
+                </div>
+                <h4 class="item-service__title">Application Development</h4>
+                <div class="item-service__text text">
+                  <p>
+                    Standard designing, building, and implementing your
+                    applications with documentation.
+                  </p>
+                </div>
+              </li>
+              <li class="services__item item-service">
+                <div class="item-service__icon">
+                  <img src="./img/services/globe.svg" alt="Icon" />
+                </div>
+                <h4 class="item-service__title">Web Development</h4>
+                <div class="item-service__text text">
+                  <p>
+                    Create and maintain your websites and also take care of its
+                    performance and traffic capacity.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+      <script src="./js/script.js"></script>
+    </div>
   </body>
 </html>

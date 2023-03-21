@@ -1,0 +1,24 @@
+// Підключення міксінів
+@import "./base/mixins";
+// Підключення локальних шрифтів
+@import "./fonts/fonts";
+// Підключення іконочного шрифту
+@import "./fonts/icons";
+
+@import "./base/vars";
+@import "./base/null";
+@import "./base/base";
+@import "./common";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/services";
+@import "./layout/portfolio";
+@import "./layout/experience";
+@import "./layout/testimonial";
+@import "./layout/blog";
+@import "./layout/education";
+@import "./layout/contacts";
+@import "./layout/footer";
+
+
