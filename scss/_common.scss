@@ -25,6 +25,32 @@
       padding-bottom: rem(40);
     }
   }
+  // .page__portfolio
+  &__portfolio {
+    padding-top: rem(104);
+    padding-bottom: rem(173);
+    @media (max-width: $tablet) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+    }
+  }
+  // .page__experience
+		&__experience {
+        padding-top: rem(104);
+    padding-bottom: rem(126);
+    @media (max-width: $tablet) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+    }
+		}
 }
 // ===================================
 .title {
@@ -57,6 +83,9 @@
     font-weight: $bold;
     font-size: rem(36);
     line-height: 1.25;
+    @media (max-width: $tablet) {
+      font-size: rem(32);
+    }
     @media (max-width: $mobile) {
       font-size: rem(28);
     }
@@ -73,6 +102,25 @@
   }
 }
 // ===================================
+.category-link {
+  display: inline-block;
+  padding: rem(4) rem(8);
+  border: 1px solid #f1f1f1;
+  border-radius: rem(4);
+  font-weight: 500;
+  font-size: rem(12);
+  line-height: 1.25; /* 15/12 */
+  color: $greyColor;
+  transition: border-color $transition, color $transition,
+    box-shadow $transition, background-color $transition;
+  &:hover,
+  &:focus {
+    border-color: $purpleColor;
+    color: $whiteColor;
+    background-color: $purpleColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  }
+}
 // ===================================
 .text {
   p {
