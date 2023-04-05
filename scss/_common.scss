@@ -64,6 +64,19 @@
       padding-bottom: rem(40);
     }
   }
+  // .page__testimonial
+  &__testimonial {
+    padding-top: rem(104);
+    padding-bottom: rem(153);
+    @media (max-width: $tablet) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+    }
+  }
 }
 // ===================================
 .title {

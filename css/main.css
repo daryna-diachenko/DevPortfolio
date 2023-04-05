@@ -254,6 +254,22 @@ h6 {
     padding-bottom: 2.5rem;
   }
 }
+.page__testimonial {
+  padding-top: 6.5rem;
+  padding-bottom: 9.5625rem;
+}
+@media (max-width: 61.99875em) {
+  .page__testimonial {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .page__testimonial {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
 
 .title__label {
   display: -webkit-box;
@@ -1113,6 +1129,88 @@ h6 {
   background-color: #d9d9d9;
 }
 
+.testimonial {
+  background-color: #FBFBFB;
+}
+.testimonial__title:not(:last-child) {
+  margin-bottom: 8.25rem;
+}
+@media (max-width: 61.99875em) {
+  .testimonial__title:not(:last-child) {
+    margin-bottom: 6.25rem;
+  }
+}
+@media (max-width: 47.99875em) {
+  .testimonial__title:not(:last-child) {
+    margin-bottom: 4.375rem;
+  }
+}
+.testimonial__items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
+  row-gap: 4.375rem;
+}
+.item-testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0rem 2rem 1.5rem 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+@media (max-width: 47.99875em) {
+  .item-testimonial {
+    padding: 0rem 0.625rem 1.25rem 0.625rem;
+  }
+}
+.item-testimonial__avatar--ibg {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: -2.8125rem;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  overflow: hidden;
+}
+.item-testimonial__avatar--ibg:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.item-testimonial__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  line-height: 1.75;
+}
+.item-testimonial__text:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+@media (max-width: 47.99875em) {
+  .item-testimonial__text:not(:last-child) {
+    margin-bottom: 1.25rem;
+  }
+}
+.item-testimonial__name {
+  margin-top: 1.875rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.item-testimonial__name:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.item-testimonial__position {
+  -ms-flex-item-align: start;
+      align-self: start;
+}
+
 .blog__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1142,7 +1240,7 @@ h6 {
 .blog__items {
   display: grid;
   gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(17.5rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
 }
 .item-blog {
   min-height: 100%;
