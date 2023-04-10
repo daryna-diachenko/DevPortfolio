@@ -1,0 +1,126 @@
+.contacts {
+  background-color: $bgColor;
+  // .contacts__container
+  &__container {
+  }
+  // .contacts__content
+  &__content {
+    display: grid;
+    align-items: center;
+    row-gap: rem(40);
+    @media (min-width: $mobile) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  // .contacts__form
+  &__form {
+  }
+  // .contacts__body
+  &__body {
+    @media (min-width: $mobile) {
+      padding-left: rem(70);
+    }
+    @media (min-width: $tablet) {
+      padding-left: rem(104);
+    }
+  }
+  // .contacts__list
+  &__list {
+  }
+}
+.form {
+  display: grid;
+  gap: rem(14);
+  // .form__item
+  &__item {
+    &:last-child{
+        padding-top: rem(36);
+        @media (max-width: $mobile){
+        padding-top: rem(20);
+        }
+    }
+  }
+  // .form__input
+  &__input {
+    padding: rem(16) rem(24);
+    width: 100%;
+    border-radius: rem(8);
+    font-size: rem(14);
+    line-height: 1.2; /* 17/14 */
+    background-color: $whiteColor;
+    &::placeholder {
+      color: $greyColor;
+    }
+    &:focus {
+      &::placeholder {
+        color: $mainColor;
+      }
+    }
+  }
+  // .form__button
+  &__button {
+    width: 100%;
+    padding: rem(16);
+    border: 1px solid $purpleColorLt;
+    border-radius: rem(8);
+    font-weight: $medium;
+    font-size: rem(14);
+    line-height: 1.2; /* 17/14 */
+    color: $whiteColor;
+    background-color: $purpleColor;
+    transition: background-color $transition, color $transition;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $purpleColorLt;
+        color: $purpleColor;
+      }
+    }
+  }
+}
+textarea.form__input {
+  height: rem(190);
+  resize: vertical;
+}
+.list-contacts {
+  display: grid;
+  gap: rem(48);
+  // .list-contacts__item
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: rem(23);
+  }
+  // .list-contacts__icon
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 rem(56);
+    height: rem(56);
+    border-radius: rem(16);
+    background-color: $bgPurpleColor;
+  }
+  // .list-contacts__body
+  &__body {
+  }
+  // .list-contacts__title
+  &__title {
+    font-weight: $medium;
+    line-height: 1.2; /* 19/16 */
+    &:not(:last-child) {
+      margin-bottom: rem(4);
+    }
+  }
+  // .list-contacts__text
+  &__text {
+    font-size: rem(14);
+    line-height: 1.71;
+    color: $greyColor;
+    transition: color $transition;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $purpleColor;
+      }
+    }
+  }
+}

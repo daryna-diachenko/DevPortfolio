@@ -78,8 +78,8 @@
     }
   }
   // .page__education
-		&__education {
-          padding-top: rem(104);
+  &__education {
+    padding-top: rem(104);
     padding-bottom: rem(176);
     @media (max-width: $tablet) {
       padding-top: rem(60);
@@ -89,7 +89,20 @@
       padding-top: rem(40);
       padding-bottom: rem(40);
     }
-		}
+  }
+  // .page__contacts
+  &__contacts {
+    padding-top: rem(104);
+    padding-bottom: rem(134);
+    @media (max-width: $tablet) {
+      padding-top: rem(60);
+      padding-bottom: rem(60);
+    }
+    @media (max-width: $mobile) {
+      padding-top: rem(40);
+      padding-bottom: rem(40);
+    }
+  }
 }
 // ===================================
 .title {
