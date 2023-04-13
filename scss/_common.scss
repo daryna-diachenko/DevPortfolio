@@ -1,10 +1,10 @@
 .page {
   // .page__hero
   &__hero {
-    padding-top: rem(240);
+    padding-top: rem(230);
     padding-bottom: rem(144);
     @media (max-width: $tablet) {
-      padding-top: rem(160);
+      padding-top: rem(130);
       padding-bottom: rem(60);
     }
     @media (max-width: $mobile) {
